@@ -760,28 +760,29 @@ footer { background:var(--verde-escuro); padding:28px 60px; display:flex; justif
 var navbar  = document.getElementById('navbar');
 var toggle  = document.getElementById('navToggle');
 var mobMenu = document.getElementById('mob-menu');
-var mobClose = document.getElementById('mob-close');
+var btnClose = document.getElementById('mob-close');
 
 window.addEventListener('scroll', function() {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
+// Abrir menu
 toggle.addEventListener('click', function() {
   mobMenu.classList.add('open');
   document.body.style.overflow = 'hidden';
 });
 
-mobClose.addEventListener('click', function() {
-  mobMenu.classList.remove('open');
-  document.body.style.overflow = '';
+// Fechar pelo botão X
+btnClose.addEventListener('click', function() {
+  mobClose();
 });
 
-function mobClose2() {
-  mobMenu.classList.remove('open');
-  document.body.style.overflow = '';
-}
+// Fechar ao clicar fora (no fundo do overlay)
+mobMenu.addEventListener('click', function(e) {
+  if (e.target === mobMenu) mobClose();
+});
 
-// replace onclick="mobClose()" — need same name
+// Função global usada nos onclick dos links
 function mobClose() {
   mobMenu.classList.remove('open');
   document.body.style.overflow = '';

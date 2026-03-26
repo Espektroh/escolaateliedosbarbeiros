@@ -198,6 +198,9 @@ section { padding:80px 60px; }
 .plano-itens { list-style:none; display:flex; flex-direction:column; gap:9px; margin-bottom:24px; flex:1; }
 .plano-itens li { display:flex; align-items:flex-start; gap:9px; font-size:.85rem; color:var(--texto-sub); }
 .plano-itens li::before { content:''; display:block; width:6px; height:6px; border-radius:50%; background:var(--verde-claro); margin-top:5px; flex-shrink:0; }
+.plano-pagamento { font-family:'Barlow Condensed',sans-serif; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(--texto-sub); margin-bottom:4px; font-weight:600; }
+.plano-preco { font-family:'Barlow Condensed',sans-serif; font-size:1.4rem; font-weight:700; color:var(--verde-escuro); margin-bottom:2px; }
+.plano-pix { font-family:'Barlow',sans-serif; font-size:.78rem; color:var(--texto-sub); margin-bottom:16px; }
 .plano-cta { display:block; text-align:center; background:var(--verde); color:#fff; padding:12px 20px; font-family:'Barlow Condensed',sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:700; text-decoration:none; border-radius:2px; transition:all .25s; }
 .plano-cta:hover { background:var(--verde-medio); transform:translateY(-1px); }
 .plano-card.destaque .plano-cta { background:var(--verde-escuro); }
@@ -520,56 +523,58 @@ footer { background:var(--verde-escuro); padding:28px 60px; display:flex; justif
     <article class="plano-card">
       <span class="plano-badge">Plano Técnico</span>
       <h3 class="plano-nome">Formação Técnica</h3>
-      <div class="plano-freq">2 vezes por semana</div>
-      <div class="plano-duracao">Duração: 5 meses · Com avaliação técnica</div>
+      <div class="plano-freq">2× por semana</div>
+      <div class="plano-duracao">5 meses · Avaliação técnica</div>
       <p class="plano-desc">90% prática. Ideal para quem quer dominar as técnicas e entrar rápido no mercado.</p>
       <ul class="plano-itens">
-        <li>Módulos de Corte, Barba e Finalizações</li>
-        <li>Diploma reconhecido em todo o Brasil</li>
-        <li>Indicação para estágio remunerado</li>
-        <li>Bônus: Curso online gravado + PDF</li>
+        <li>Módulos de Corte, Barba e Finalizações.</li>
+        <li>Diploma reconhecido em todo o Brasil.</li>
       </ul>
       <a href="https://api.whatsapp.com/send?phone=5515992712912&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso!" target="_blank" rel="noopener" class="plano-cta">Quero este plano</a>
     </article>
     <article class="plano-card destaque">
       <span class="plano-badge popular">Mais completo</span>
       <h3 class="plano-nome">Formação Completa</h3>
-      <div class="plano-freq">2 vezes por semana</div>
-      <div class="plano-duracao">Duração: 5 meses · Com avaliação técnica</div>
+      <div class="plano-freq">2× por semana</div>
+      <div class="plano-duracao">5 meses · Avaliação técnica</div>
       <p class="plano-desc">Técnica + Gestão + Marketing. O mais procurado por quem quer empreender em Sorocaba.</p>
       <ul class="plano-itens">
-        <li>Todos os módulos da grade curricular</li>
-        <li>Diploma reconhecido em todo o Brasil</li>
-        <li>Módulo de Gestão e Marketing inclusos</li>
-        <li>Bônus: Curso online gravado + PDF</li>
+        <li>Módulos de Corte, Barba e Finalizações.</li>
+        <li>Módulo de Gestão e Marketing inclusos.</li>
+        <li>Diploma reconhecido em todo o Brasil.</li>
+        <li>Bônus: Formação Completa em Barbearia (PDF).</li>
       </ul>
       <a href="https://api.whatsapp.com/send?phone=5515992712912&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso!" target="_blank" rel="noopener" class="plano-cta">Quero este plano</a>
     </article>
     <article class="plano-card">
       <span class="plano-badge">Plano Acelerado</span>
       <h3 class="plano-nome">Formação Acelerada</h3>
-      <div class="plano-freq">3 vezes por semana</div>
-      <div class="plano-duracao">Duração: 4 meses · Com avaliação técnica</div>
+      <div class="plano-freq">3× por semana</div>
+      <div class="plano-duracao">4 meses · Avaliação técnica</div>
       <p class="plano-desc">Técnica + Gestão + Marketing em ritmo intenso. Formação completa em 4 meses.</p>
       <ul class="plano-itens">
-        <li>Todos os módulos da grade curricular</li>
-        <li>Diploma reconhecido em todo o Brasil</li>
-        <li>Mais aulas práticas por semana</li>
-        <li>Bônus: Curso online gravado + PDF</li>
+        <li>Módulos de Corte, Barba e Finalizações.</li>
+        <li>Módulo de Gestão e Marketing inclusos.</li>
+        <li>Mais aulas práticas por semana.</li>
+        <li>Diploma reconhecido em todo o Brasil.</li>
+        <li>Indicação para estágio.</li>
+        <li>Bônus: Formação Completa em Barbearia (PDF).</li>
       </ul>
       <a href="https://api.whatsapp.com/send?phone=5515992712912&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso!" target="_blank" rel="noopener" class="plano-cta">Quero este plano</a>
     </article>
     <article class="plano-card">
       <span class="plano-badge">Plano Imersão</span>
       <h3 class="plano-nome">Formação Imersão</h3>
-      <div class="plano-freq">5 vezes por semana</div>
-      <div class="plano-duracao">Duração: 3 meses · Com avaliação técnica</div>
+      <div class="plano-freq">5× por semana</div>
+      <div class="plano-duracao">3 meses · Avaliação técnica</div>
       <p class="plano-desc">Imersão total. Formação completa em 3 meses para quem quer atuar no mercado rapidamente.</p>
       <ul class="plano-itens">
-        <li>Todos os módulos da grade curricular</li>
-        <li>Diploma reconhecido em todo o Brasil</li>
-        <li>5 dias de aula por semana</li>
-        <li>Bônus: Curso online gravado + PDF</li>
+        <li>Módulos de Corte, Barba e Finalizações.</li>
+        <li>Módulo de Gestão e Marketing inclusos.</li>
+        <li>Mais aulas práticas por semana.</li>
+        <li>Diploma reconhecido em todo o Brasil.</li>
+        <li>Indicação para estágio.</li>
+        <li>Bônus: Curso online gravado + Formação Completa em Barbearia (PDF).</li>
       </ul>
       <a href="https://api.whatsapp.com/send?phone=5515992712912&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso!" target="_blank" rel="noopener" class="plano-cta">Quero este plano</a>
     </article>
